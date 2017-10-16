@@ -5,8 +5,12 @@
 
 class ListNode
 {
-	DietPlan data;
-	ListNode *next;
+	//private:
+	public:
+		DietPlan data;
+		ListNode *next;
+	//public:
+		ListNode(); // constructor
 };
 
 class List
@@ -16,4 +20,7 @@ class List
 	public:
 		// constructor-slash-instantiator
 		List() { head=NULL; tail=NULL; }
+
+		void createNode(DietPlan input_data);
+		void display();
 };
