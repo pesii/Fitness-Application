@@ -26,3 +26,12 @@ class ExercisePlan {
         string get_name() { return plan_name; };
         string get_date() { return completion_date; };      
 };
+
+// overloading the output operator for printing to files
+ofstream &operator<< (ofstream &os, ExercisePlan &data);
+
+// overloading the output operator for printing to screen
+ostream &operator<< (ostream &os, ExercisePlan &data);
+
+// overloading the input operator for reading files
+ifstream &operator>> (ifstream &os, ExercisePlan &data);

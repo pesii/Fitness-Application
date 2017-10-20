@@ -35,7 +35,11 @@ class DietPlan {
 
 };
 
-
+// overloading the output operator for printing to files
 ofstream &operator<< (ofstream &os, DietPlan &data);
+
+// overloading the output operator for printing to screen
 ostream &operator<< (ostream &os, DietPlan &data);
+
+// overloading the input operator for reading files
 ifstream &operator>> (ifstream &os, DietPlan &data);

@@ -3,14 +3,18 @@
 #include "pa5.h"
 #include "DietPlans.h"
 
+
 class ListNode
 {
-	//private:
-	public:
-		DietPlan data;
+//	private:
 		ListNode *next;
-	//public:
+		DietPlan data;
+	public:
+//		DietPlan data;
+//		ListNode *next;
 		ListNode(); // constructor
+//		void createNode(DietPlan input_data);
+//		void display();
 };
 
 class List

@@ -3,7 +3,9 @@
 /* createNode() was created from examples on Codementor's article
  * "A Comprehensive Guide to Singly Linked List Using C++," codementor.io
  */
-void List::createNode(DietPlan input_data)
+
+/*
+void createNode(DietPlan input_data)
 {
 	// allocate memory to node
 	ListNode *temp = new ListNode; // Cpp version of C-malloc()
@@ -19,6 +21,7 @@ void List::createNode(DietPlan input_data)
 	}
 }
 
+
 void List::display()
 {
 	ListNode *temp = new ListNode;
@@ -28,3 +31,4 @@ void List::display()
 		temp = temp->next;
 	}
 }
+*/
