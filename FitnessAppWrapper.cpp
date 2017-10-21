@@ -199,16 +199,18 @@ void FitnessAppWrapper::runApp(void) {
 				cout << "Which day of the week would you like to edit? >> ";
 				cin >> day_of_week;
 			} while (day_of_week < 0 || day_of_week > 7);
-
 			edit_daily_plan(diet_data[day_of_week]);
+			
+			cout << diet_data[day_of_week];
 		} else if (user_input == 8) { // edit daily exercise plan
  			int day_of_week = 0;
 			do {
 				cout << "Which day of the week would you like to edit? >> ";
 				cin >> day_of_week;
 			} while (day_of_week < 0 || day_of_week > 7);
-
 			edit_daily_plan(exercise_data[day_of_week]);
+
+			cout << exercise_data[day_of_week];
 		} else if (user_input == 9) {
 			// open file
 			ofstream out_file;
